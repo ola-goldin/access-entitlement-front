@@ -1,0 +1,4 @@
+.numberBadge {
+    background-color:var(--main-round-badge);
+    color:var(--background) ;
+  }

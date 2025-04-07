@@ -2,7 +2,13 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --background-highlight: #F0F6FF;
+  --main-text: #1D1D20;
+  --muted-text: #A9B0BB;
+  --input-border-color: #D8DFE7;
+  --main-round-badge: #B62AA7;
+  --primary-blue: #126CF9;
+
 }
 
 @theme inline {
@@ -16,6 +22,7 @@
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+
   }
 }
 
@@ -23,4 +30,32 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.not-found,
+.error {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.not-found h1,
+.error h1 {
+  font-size: 3rem;
+  margin: 0;
+  font-weight: 900;
+  color: var(--main-text);
+  text-transform: uppercase;
+  background: var(--text-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: var(--main-text);
+  background-size: cover;
+  background-position: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.not-found p,
+.error p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--main-text);
 }
